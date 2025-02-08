@@ -1,0 +1,50 @@
+<htm>
+<head>Digital Clock</head>
+
+<body>
+    <h1 id = "dc">  </h1 id= "dc">
+</body>
+
+<script>
+    function showtime(){
+        let date = new Date ();
+        let h=date.getHours();
+        let m=date.getMinutes();
+        let s=date.getSeconds();
+        let sesson = "AM";
+
+        //in the place of h=0 it should display h=12
+        if(h==0)
+            h=12;
+
+        //makeing clock in 12hr time frame >>>
+        if(h>12)
+            h=h-12;
+            sesson = "PM"
+        
+        //putting 0 in single digit before h,m and s
+        // if(h<10)
+        // h="0"+h;
+        // if(m<10)
+        // m="0"+m;
+        // if(s<10)
+        // s="0"+s;
+
+        //same using ternary operator
+        h =(h<10) ? "0" + h:h;
+        m =(m<10) ? "0" + m:m;
+        s =(s<10) ? "0" + s:s;
+
+        let time = h +":"+m+":"+s + " " + sesson;
+
+
+        document.getElementById("dc").innerHTML=time;
+        setTimeout(showtime,1000);
+    }
+    showtime();
+
+
+</script>
+
+
+</htm>
