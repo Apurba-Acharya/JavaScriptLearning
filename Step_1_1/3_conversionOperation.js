@@ -57,13 +57,3 @@ let gameCounter = 100;
 console.log(gameCounter++);
 //PreFix:
 console.log(++gameCounter);
-
-
-
-
-
-
-
-
-
-
