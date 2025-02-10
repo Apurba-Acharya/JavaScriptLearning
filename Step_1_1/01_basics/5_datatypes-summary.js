@@ -38,3 +38,29 @@ console.log(typeof IsLoggedIn);
 console.log(typeof outsideTemp);
 
 // Link: https://262.ecma-international.org/5.1/#sec-11.4.3
+
+
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// Memories: 1. Stack (Premtive data type) ; 2. Heap (nonPremtive data type)
+
+//Heap example:
+let myYoutubename  = "hchoudharydot";
+
+let anothername = myYoutubename;
+anothername = "chaiCode";
+
+console.log(anothername);
+console.log(myYoutubename);
+
+
+//Stack example:
+let userOne ={
+    email: "user@google.com",
+    upi: "user@ybl"
+}
+
+let userTwo = userOne;
+userTwo.email = "h@google.com"
+console.log(userTwo.email);
+console.log(userOne.email);
