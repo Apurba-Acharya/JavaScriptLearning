@@ -47,9 +47,33 @@ const users = [
 ]
 //console.log(users[1].email);
 
-console.log(tinderUser);
-console.log(Object.keys(tinderUser));
-console.log(Object.values(tinderUser));
+// console.log(tinderUser);
+// console.log(Object.keys(tinderUser));
+// console.log(Object.values(tinderUser));
 
-console.log(Object.entries(tinderUser));
-console.log(tinderUser.hasOwnProperty('isLoggedIn'));
+// console.log(Object.entries(tinderUser)); //Not imp.
+// console.log(tinderUser.hasOwnProperty('isLoggedIn')); //Not imp.
+
+
+const course = {
+    coursename: "js in hindi",
+    price: "999",
+    courseInstructure: "hitesh"
+}
+
+//Destructuring of object: 
+const {courseInstructure: instructor} = course
+console.log(instructor);
+
+// //JSON:
+// {
+//     "name": "hitesh",
+//     "coursename": "js is hindi",
+//     "price": "free"
+// }
+
+// [
+//     {},
+//     {},
+//     {}
+// ]
