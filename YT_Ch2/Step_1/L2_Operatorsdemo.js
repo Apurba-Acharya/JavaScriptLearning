@@ -2,7 +2,7 @@
 
 let //if we declare the type of variable speratly no needs to declare everytime
 
-//ARITHMETIC OPERATORS  : +, -, *, /, %, **
+// //ARITHMETIC OPERATORS  : +, -, *, /, %, **
 // x=10;y=20;
 // console.log(x+y);
 // console.log(y-x);
