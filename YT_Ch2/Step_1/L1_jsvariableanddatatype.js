@@ -17,33 +17,31 @@
 // console.log(x); //To print the value in inspect >> console
 
 
-//******** let variable *********
+// //******** let variable *********
 
-let x; //declarization
-x= "welcome"; //initialization
-console.log(x)
+// let x; //declarization
+// x= "welcome"; //initialization
+// console.log(x)
 
-//*single statement >> declaration+initialization :
-let y = "welcome"; 
-console.log(y);
+// //*single statement >> declaration+initialization :
+// let y = "welcome"; 
+// console.log(y);
 
-//multiple veriable in single line
-let z = "welcome", a= "javascript";
-console.log(z);
-console.log(a);
+// //multiple veriable in single line
+// let z = "welcome", a= 100;
+// console.log(z);
+// console.log(a);
 
-var m = "welcome", b= "javascript";
-console.log(m);
-console.log(b);
 
-//***** difference between var and let *******/
-/* console.log(x);
+//******* difference between var and let *******
+
+console.log(x);
 var x= 100;
 console.log(x)
 
 console.log(y);
 let y= 100;
-console.log(y) */
+console.log(y)
 
 /*******const veriable ****/
 /* const x = 100.256;
