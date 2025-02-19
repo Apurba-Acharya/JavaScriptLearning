@@ -1,26 +1,29 @@
-/* //variable
+// //variable
 
-//var veriable
+// //*********** var variable ***********:
 
-//multiple line
-var x; //declarization
-x=10; //initialization
+// //*multiple line :
+// var x; //declarization
+// x=10; //initialization
 
-//single line
-var x = 10;
+// //*single statement >> declaration+initialization :
+// var x = 10;
 
-//single ststement - multiple veriable
-var x=100,y=200;
+// //*single statement >> multiple variable :
+// var x=100,y=200;
 
-document.write(x);
-console.log(x); */
+// //*print :
+// document.write(x); //To print the value in web page
+// console.log(x); //To print the value in inspect >> console
 
-//******** let veriable *********
 
-/* let x; //declarization
+//******** let variable *********
+
+let x; //declarization
 x= "welcome"; //initialization
 console.log(x)
 
+//*single statement >> declaration+initialization :
 let y = "welcome"; 
 console.log(y);
 
@@ -31,7 +34,7 @@ console.log(a);
 
 var m = "welcome", b= "javascript";
 console.log(m);
-console.log(b); */
+console.log(b);
 
 //***** difference between var and let *******/
 /* console.log(x);
