@@ -14,6 +14,7 @@
 // //*print :
 // document.write(x6); //To print the value in web page
 // console.log(x6); //To print the value in inspect >> console
+//console.log ("Print output in TERMINAL: node L1_jsvariableanddatatype.js");
 
 
 // //******** let variable *********
