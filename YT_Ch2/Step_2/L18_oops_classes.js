@@ -26,12 +26,12 @@ class Student { //Class = Attribute + Behaviours
 
 }
 
-// Type 1 :
+// Objects : Type 1 :
 let stu = new Student(); // Object 1
 stu.setDetails(101,"Dog","D");
 stu.display1();
 
-//Type 2 :
+//Objects : Type 2 :
 let stu1 = new Student(101,"Cow","E"); // Objects 2
 stu1.display2();
 
