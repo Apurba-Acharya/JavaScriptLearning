@@ -1,73 +1,69 @@
+// String is a pre defined object in javaScript :
+
 let s= "welcome";
+// or, let s = new String ();
 
-// let s = new String ();
+//charAt() :
+console.log ("charAt() : ", s.charAt(3)); //c
 
-//charAt()
-console.log (s.charAt(3)); //l
+//concat(): 
+console.log ("concat(): ", s.concat (" to javascript programming"));
+console.log ("concat(): ", s.concat (" to javascript programming").concat (" 2025"));
 
-//concat()
-console.log (s.concat (" to javascript programming"));
-console.log (s.concat (" to javascript programming").concat (" 2025"));
-
-//replace();
+//replace(): 
 s = "welcome to javascript";
-console.log (s.replace ("javascript", "Python"));
+console.log ("replace(): ", s.replace ("javascript", "Python"));
 
-//substring()
+//substring(): 
 s = "welcome";
-console.log (s.substring (0,3)); //Print only: wel
-console.log (s.substring (3,7)); //Print only: come
+console.log ("substring(): ", s.substring (0,3)); //Print only: wel
+console.log ("substring(): ", s.substring (3,7)); //Print only: come
 
-//toLowerCase() & toUpperCase()
+// ***toLowerCase() & toUpperCase() :
 s = "WELcome";
-console.log (s.toLowerCase()); //welcome
-console.log (s.toUpperCase()); //WELCOME
+console.log ("toLowerCase(): ", s.toLowerCase()); //welcome
+console.log ("toLowerCase(): ", s.toUpperCase()); //WELCOME
 
-//split()
+// ***split() : 
 s = "welcome to javascript";
 let arr = (s.split (' '));
-console.log(arr);
-console.log(arr[0]);
-console.log(arr[2]);
+console.log("split() : ", arr);
+console.log("split() : ", arr[0]);
+console.log("split() : ", arr[2]);
 
-//trim()
+// ***trim() :
 s =  "      welcome ";
-console.log (s);
-console.log (s.trim());
+console.log ("withOut trim : ", s);
+console.log ("trim() : ", s.trim());
 
-//********Numbers  >>>
-//let x = 100; // Or, let x = new Number (100);
-
-let x = 102; // Integer
+//Numbers :
+let x = 100; // Integer // Or, let x = new Number (100);
 let y = 102.7; //decimal
 let z = 10e2; //exponential value
-console.log(x,y,z);
+console.log("Numbers : ", x,y,z);
 
-// Types of methods in numbers >>>
+// Types of methods in numbers :
+//isInteger() : it will return boolean value
+a = 10;
+b = 1.8;
+c = "x";
+console.log ("isInteger() : ", Number.isInteger(a)); 
+console.log ("isInteger() : ", Number.isInteger(b)); 
+console.log ("isInteger() : ", Number.isInteger(c)); 
 
-//isInteger() >> it will return boolean value
-x = 10;
-y = 1.8;
-z = "x";
-console.log (Number.isInteger(x)); 
-console.log (Number.isInteger(y)); 
-console.log (Number.isInteger(z)); 
-
-//parseInt() - converts a string into number
+//parseInt() : converts a string into number
 s="12345";
 console.log(typeof(s)); //String
-console.log(Number.parseInt(s)); // integer
+console.log("parseInt() : ", Number.parseInt(s)); // integer
 
-//parsefloat()
+//parsefloat(): converts a string into float
 s1="123.567";
 console.log(typeof(s1)); //String
-console.log(Number.parseFloat(s1)); //float
+console.log("parsefloat(): ", Number.parseFloat(s1)); //float
 
 //toString(): converts a number to string
 let n = 1234;
 let n1 = 12.3256;
 console.log(typeof(n)); //Number
-console.log(typeof(Number.toString(n))); //String
-console.log(typeof(Number.toString(n1))); //String
-
-
+console.log("toString(): ", typeof(Number.toString(n))); //String
+console.log("toString(): ", typeof(Number.toString(n1))); //String
