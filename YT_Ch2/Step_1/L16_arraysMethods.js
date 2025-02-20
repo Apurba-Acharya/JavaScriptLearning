@@ -38,5 +38,11 @@ fruits1 = ["Banana", "Orange", "Apple", "Mango"];
 console.log("slice() : ", fruits1.slice(1)); //[ 'Orange', 'Apple', 'Mango' ]
 
 //sort() : for shorting | important
-console.log("sort() : ", fruits1.sort());
+console.log("sort() : ", fruits1.sort()); //[ 'Apple', 'Banana', 'Mango', 'Orange' ]
+let nums = [200, 300, 900, 700, 100];
+console.log("sort() : ", nums.sort()); //[ 100, 200, 300, 700, 900 ]
+
+//reverse() : to reverse an existing array
+console.log("reverse() : ", fruits1.reverse()); //[ 'Orange', 'Mango', 'Banana', 'Apple' ]
+
 
