@@ -28,18 +28,21 @@ let person={        // person = object
 // console.log(person.age); //undefned
 
 
-//for-in loop for reading property statements :
+// // ***for-in loop for reading property statements : it can iterates over keys/indexes of an object or array. 
 
-for (let x in person){
-    console.log(x); //printing only property names
-}
+// for (let x in person){
+//     console.log(x); //printing only property keys
+// }
 
-for (let y in person){
-    console.log(person[y]); //printing only values of property
-}
+// for (let y in person){
+//     console.log(person[y]); //printing only values of property
+// }
 
-for(let z in person){
-    console.log(z+ " : " +person[z]); // printing key value pair
-}
+// for(let z in person){
+//     console.log(z+ " : " +person[z]); // printing key value pair
+// }
 
-
+// // ***Points : In objects only for-in loop can accessable.
+// for(m of person){
+//     console.log(m);   
+// }

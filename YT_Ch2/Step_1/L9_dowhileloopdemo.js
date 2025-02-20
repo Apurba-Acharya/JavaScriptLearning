@@ -9,11 +9,9 @@
 //     i++;
 // }while(i<=10);
 
-//Print reverse : 10 to 1
-let i=10;
-do{
-    console.log(i);
-    i--;
-}while(i>0);
-
-
+// //Print reverse : 10 to 1
+// let i=10;
+// do{
+//     console.log(i);
+//     i--;
+// }while(i>0);
