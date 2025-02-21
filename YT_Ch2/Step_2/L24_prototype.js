@@ -1,16 +1,17 @@
-//Prototype using function:
+//Prototype using function :
 
 function student(){ //function: itself is an object in javascript
     this.name = "John";
     this.gender = "male";
 }
 
+// Using prototype we can use age in all object created be same function :
 student.prototype.age = 35; //after add age in prototype the age value is added in student object.
 
-stu1 = new student();
+stu1 = new student(); //Creating student object using function
 
-console.log(stu1.name);
-console.log(stu1.gender);
+console.log("Student function value : ", stu1.name);
+console.log("Student function value : ", stu1.gender);
 
 // stu1.age = 35; //This is not required after create prototype
 console.log(stu1.age, stu1.name, stu1.gender); //35 John male

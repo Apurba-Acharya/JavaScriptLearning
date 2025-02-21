@@ -1,9 +1,9 @@
 class Animal {
-    constructor (color){ //here color: method variable
-        this.color = color; //here color: class variable
+    constructor (color){ //color: method variable
+        this.color = color; //color: class variable
 
     }
-    printColor(){ //Method
+    printColor(){ //Parent Method
         console.log("Parent method: ",this.color);
     }
 }

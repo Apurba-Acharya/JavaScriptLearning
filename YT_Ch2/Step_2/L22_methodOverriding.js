@@ -1,3 +1,7 @@
+/*Method Overridding : Method created in parent class using extends 
+same method we can use in child class to pass different value */
+
+
 class Bank{
     roi(){
         return 0.3;
@@ -13,8 +17,9 @@ class SBI extends Bank{
         return 12.03;
     }
 }
+
 let sbi = new SBI();
 console.log(sbi.roi());
 
-ax = new AXIS();
-console.log(ax.roi())
+let axis = new AXIS();
+console.log(axis.roi())

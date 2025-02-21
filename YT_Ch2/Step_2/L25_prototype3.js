@@ -18,6 +18,3 @@ em1obj.display();
 
 em2obj = new Employee(111,"Ashish"); // Object 2
 em2obj.display();
-
-
-
