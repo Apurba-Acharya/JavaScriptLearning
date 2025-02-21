@@ -1,16 +1,19 @@
-class A{
-    a = 100;
-    display(){
-        console.log("A: ",this.a);
-    }
-}
-class B extends A{
-    b = 150;
-    show(){
-        console.log("B: ",this.b);
-    }
+//Inharitnce :
+
+class father {
+  f = 100;
+  display_f() {
+    console.log("Father class : ", this.f);
+  }
 }
 
-let bobj = new B();
-bobj.display();
-bobj.show();
+class child extends father {
+  c = 150;
+  display_c() {
+    console.log("Child class: ", this.c);
+  }
+}
+
+let cChild = new child();
+cChild.display_f();
+cChild.display_c();
