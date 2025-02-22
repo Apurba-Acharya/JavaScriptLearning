@@ -10,7 +10,5 @@ for (let i=1; i<=3; i++){ //Outer loop
             str = str + `${a}` //str = str + " " + a 
             a++;
     }
-    
     console.log(str);
-
 }
