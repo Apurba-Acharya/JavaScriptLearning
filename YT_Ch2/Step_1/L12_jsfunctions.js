@@ -1,11 +1,11 @@
 
 //FUNCTIONS :
 
-// //Example 1:
-// function add (a,b){
-//     console.log (a+b);
-//  }
-//  add (200,300);
+//Example 1:
+function add (a,b){
+    console.log (a+b);
+ }
+ add (200,300);
 
 // //Example 2:
 // function add (a,b){
