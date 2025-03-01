@@ -14,13 +14,13 @@
 // //*print :
 // document.write(x6); //To print the value in web page
 // console.log(x6); //To print the value in inspect >> console
-//console.log ("Print output in TERMINAL: node L1_jsvariableanddatatype.js");
+//console.log ("Print output in VS code TERMINAL: node L1_jsvariableanddatatype.js");
 
 
 // //******** let variable *********
 // let x3; //declarization
 // x3= "welcome"; //initialization
-// console.log(x)
+// console.log(x3)
 
 // //*single statement >> declaration+initialization :
 // let y2 = "welcome"; 
@@ -48,7 +48,6 @@
 // console.log("x1 value before change =", x1);
 // x1=500; //incorrect because x1 is constant
 // console.log(x1); //error
-
 
 // //****** data types *********
 // let qty = 100;
