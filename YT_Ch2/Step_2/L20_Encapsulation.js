@@ -8,7 +8,6 @@ class Student {
     return this.name;
   }
   setName(name) { //set method
-
     this.name = name;
   }
 
