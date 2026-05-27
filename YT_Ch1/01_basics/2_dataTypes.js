@@ -1,8 +1,5 @@
-
-
 //alert (3+3); //we are using nodejs, not browser
-console.log(3+3);
-
+console.log("addition " + (3+3));
 
 let name  = "Apurba";
 let age  = 18;
@@ -23,8 +20,3 @@ console.log(typeof "apurba");
 console.log(typeof age);
 console.log(typeof null); //Object
 console.log(typeof undefined); //undefined
-
-
-
-
-

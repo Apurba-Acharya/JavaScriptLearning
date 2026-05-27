@@ -4,8 +4,8 @@ var accountPasword = "12345";
 accountCity = "Jaipur";
 let accountState;
 
-// accountId = 2; // Not possible due to const keyword
-// console.log(accountId);
+// accountId = 2; // Error: Not possible due to const keyword
+console.log(accountId);
 
 accountemail = "Hc@hc.com";
 accountPasword = "21212";
