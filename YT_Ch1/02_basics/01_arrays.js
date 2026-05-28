@@ -1,36 +1,45 @@
-const myArr = [0, 1, 2, 3, 4, 5]
-const myHeors = ["shaktiman", "naagraj"]
+const myArr = [0, 1, 2, 3, 4, 5];
+const myHeors = ["shaktiman", "naagraj"];
 
 const myarr2 = new Array(1, 2, 3);
-// console.log(myArr[1]);
 
-//Array methods
+console.log("1: " + (myArr[1]));
 
-// myArr.push(6);
-// myArr.push(7);
-// myArr.pop();
+// Array methods:
+myArr.push(6); // Adds element at the end of array.
+console.log("2: " + (myArr));
 
-// myArr.unshift(9) // to add an element before 1st element of the existing array
-// myArr.shift() // to remove the 1st element in the array
+myArr.push(7);
+console.log("3: " + (myArr));
 
-// console.log(myArr.includes(9)); //boolean
-// console.log(myArr.indexOf(3)); //If the mentioned index is not exists then in console it should display -1.
+myArr.pop(); // Removes the last element.
+console.log("4: " + (myArr));
 
-// const newArr = myArr.join(); //Can convert an array to string
+const myArr3 = [0, 1, 2, 3, 4, 5];
 
-// console.log(myArr);
-// console.log(typeof newArr);
+myArr3.unshift(9) // Add element at beginning
+myArr3.shift() // Remove first element
+
+console.log("5: " + (myArr3.includes(9))); // boolean
+
+console.log("6: " + (myArr3.indexOf(3))); // If value does not exist, returns -1
+
+const newArr4 = myArr3.join(); // Converts array into string
+
+console.log("7: " + (myArr3));
+
+console.log("8: " + (typeof newArr4));
 
 
-//slice, splice
-console.log("A ", myArr);
+// slice, splice
+const myArr5 = [0, 1, 2, 3, 4, 5];
+console.log("9: " + (myArr5));
 
-const myn1 = myArr.slice(1,3);
-console.log(myn1);
+const myn1 = myArr5.slice(1, 3); // slice(start, end)
+console.log("10: " + (myn1));
+console.log("11: " + ("B " + myArr5));
 
-console.log("B ", myArr);
-
-const myn2 = myArr.splice(1,3);
-console.log("C ", myArr);
-console.log(myn2);
+const myn2 = myArr5.splice(1, 3);
+console.log("12: " + ("C " + myArr5));
+console.log("13: " + (myn2));
 

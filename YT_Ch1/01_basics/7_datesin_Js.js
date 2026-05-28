@@ -1,38 +1,43 @@
-let myDate  = new Date()
-console.log(myDate.toString());
-console.log(myDate.toDateString());
-console.log(myDate.toISOString());
-console.log(myDate.toJSON());
-console.log(myDate.toLocaleDateString());
-console.log(myDate.toLocaleTimeString());
+let myDate = new Date();
 
-console.log(typeof myDate);
-let myCreatedDate = new Date(2023, 0, 23); //Months always start from 0.
-console.log(myCreatedDate.toDateString());
+console.log("1: " + (myDate.toString()));
+console.log("2: " + (myDate.toDateString()));
+console.log("3: " + (myDate.toISOString()));
+console.log("4: " + (myDate.toJSON()));
+console.log("5: " + (myDate.toLocaleDateString()));
+console.log("6: " + (myDate.toLocaleTimeString()));
 
-let CreatedDate = new Date (2023, 0, 23, 5, 3);
-console.log(CreatedDate.toLocaleString());
+console.log("7: " + (typeof myDate));
 
-let CreatDate = new Date ("2023-01-14");
-console.log(CreatDate.toLocaleString());
+let myCreatedDate = new Date(2023, 0, 23); // Months start from 0
+console.log("8: " + (myCreatedDate.toDateString()));
 
-let CreDate = new Date ("12-30-2023");
-console.log(CreDate.toLocaleString());
+let CreatedDate = new Date(2023, 0, 23, 5, 3);
+console.log("9: " + (CreatedDate.toLocaleString()));
+
+let CreatDate = new Date("2023-01-14");
+console.log("10: " + (CreatDate.toLocaleString()));
+
+let CreDate = new Date("12-30-2023");
+console.log("11: " + (CreDate.toLocaleString()));
 
 let myTimeStamp = Date.now();
-console.log(myTimeStamp);
-console.log(CreDate.getTime());
+console.log("12: " + (myTimeStamp));
 
-console.log(Math.floor (Date.now()/1000)); //Convert to seconds
+console.log("13: " + (CreDate.getTime()));
+
+console.log("14: " + (Math.floor(Date.now() / 1000))); // Convert to seconds
 
 let newDate = new Date();
-console.log(newDate.getMonth() + 1);
-console.log(newDate.getDay());
 
+console.log("15: " + (newDate.getMonth() + 1));
 
-newDate.toLocaleString('default', {
-    weekday: "long"
-});
+console.log("16: " + (newDate.getDay()));
 
-
-
+console.log("17: " +
+    (
+        newDate.toLocaleString('default', {
+            weekday: "long"
+        })
+    )
+);
