@@ -1,14 +1,15 @@
-//const tinderUser = new Object() //singleton object
-//or:
-const tinderUser = {}; //non singeton object
+// const tinderUser = new Object() // singleton object
+// or:
+
+const tinderUser = {}; // non-singleton object
 
 tinderUser.id = "123abc";
 tinderUser.name = "Sammy";
-tinderUser.isLoggedIn = false
+tinderUser.isLoggedIn = false;
 
-//console.log(tinderUser);
+console.log("1: " + (JSON.stringify(tinderUser)));
 
-const regularUser ={
+const regularUser = {
     email: "some@gmail.com",
     fullname: {
         userfullname: {
@@ -16,20 +17,24 @@ const regularUser ={
             lastname: "choudhary"
         }
     }
-}
+};
 
-//console.log (regularUser.fullname.userfullname.firstname);
+console.log("2: " + (regularUser.fullname.userfullname.firstname));
 
-const obj1 = {1: "a", 2:"b"}
-const obj2 = {3: "a", 4:"b"}
-const obj3 = {5: "a", 6:"b"}
+const obj1 = {1: "a", 2: "b"};
+const obj2 = {3: "a", 4: "b"};
+const obj33 = {5: "a", 6: "b"};
 
-//const obj3 = {obj1, obj2}
-const obj4 = Object.assign({}, obj1, obj2, obj3)
+// Nested object
+const obj3 = {obj1, obj2};
 
-const obj5 = {...obj1, ...obj2}
-//console.log(obj4);
-//console.log(obj5);
+const obj4 = Object.assign({}, obj1, obj2, obj33);
+
+const obj5 = {...obj1, ...obj2};
+
+console.log("3: " + (JSON.stringify(obj4)));
+
+console.log("4: " + (JSON.stringify(obj5)));
 
 const users = [
     {
@@ -44,33 +49,34 @@ const users = [
         id: 1,
         email: "h@gmail.com"
     }
-]
-//console.log(users[1].email);
+];
 
-// console.log(tinderUser);
-// console.log(Object.keys(tinderUser));
-// console.log(Object.values(tinderUser));
+console.log("5: " + (users[1].email));
 
-// console.log(Object.entries(tinderUser)); //Not imp.
-// console.log(tinderUser.hasOwnProperty('isLoggedIn')); //Not imp.
+console.log("6: " + (JSON.stringify(tinderUser)));
 
+console.log("7: " + (Object.keys(tinderUser)));
+
+console.log("8: " + (Object.values(tinderUser)));
+
+// console.log(Object.entries(tinderUser)); // Not important
+// console.log(tinderUser.hasOwnProperty('isLoggedIn')); // Not important
 
 const course = {
     coursename: "js in hindi",
     price: "999",
     courseInstructure: "hitesh"
-}
+};
 
-//Destructuring of object: 
-const {courseInstructure: instructor} = course
-console.log(instructor);
+// Destructuring of object:
+const { courseInstructure: instructor } = course;
 
+console.log("9: " + (instructor));
 
-
-// //JSON:
+// JSON Example:
 // {
 //     "name": "hitesh",
-//     "coursename": "js is hindi",
+//     "coursename": "js in hindi",
 //     "price": "free"
 // }
 
