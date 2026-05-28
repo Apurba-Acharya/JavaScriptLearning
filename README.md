@@ -1,7 +1,6 @@
 # Topics Covered
 
 ## JavaScript Basics
-
 - Variables
 - Data Types
 - Arrays
@@ -25,7 +24,6 @@
 - Arrow Functions
 
 ## Playwright Concepts
-
 - Browser Launch
 - Page Navigation
 - Locators
@@ -39,7 +37,6 @@
 - Screenshots
 
 # Framework Concepts
-
 - Page Object Model (POM)
 - Reusable Methods
 - Utility Classes
