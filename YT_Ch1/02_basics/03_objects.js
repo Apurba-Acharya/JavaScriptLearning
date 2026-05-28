@@ -1,9 +1,9 @@
-//singleton
-//Object.create
+// singleton
+// Object.create
 
-//object literals
+// object literals
 
-const mySym = Symbol("key1") //Interview
+const mySym = Symbol("key1"); // Interview
 
 const JsUser = {
     name: "Hitest",
@@ -16,23 +16,29 @@ const JsUser = {
     lastLoginDays: ["Monday", "Saturday"]
 };
 
-// console.log(JsUser.email);
-// console.log(JsUser["email"]);
-// console.log(JsUser["full name"]);
-// console.log(JsUser[mySym]);
+console.log("1: " + (JsUser.email));
+
+console.log("2: " + (JsUser["email"]));
+
+console.log("3: " + (JsUser["full name"]));
+
+console.log("4: " + (JsUser[mySym]));
 
 JsUser.email = "h@chatgpt.com";
-//Object.freeze(JsUser); //To lock the changes in object
+
+// Object.freeze(JsUser); // To lock object changes
+
 JsUser.email = "h321@chatgpt.com";
-//console.log(JsUser);
 
-JsUser.greeting = function(){
-    console.log("Hello Js");  
-}
+// console.log("5: " + (JsUser));
 
-JsUser.greetingTwo = function(){
-    console.log(`Hello Js, ${this.name}`);   
-}
+JsUser.greeting = function () {
+    console.log("6: " + "Hello Js");
+};
 
-console.log(JsUser.greeting());
-console.log(JsUser.greetingTwo());
+JsUser.greetingTwo = function () {
+    return(`Hello Js, ${this.name}`);
+};
+
+console.log("7: " + (JsUser.greeting()));
+console.log("8: " + (JsUser.greetingTwo()));
