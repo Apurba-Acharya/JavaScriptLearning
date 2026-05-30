@@ -1,57 +1,44 @@
-// let a = 300;
+let a = 300;
 
-// if(true){
-//     let a  = 10;
-//     const b  = 20;
-//     console.log("INNER: ", a); // block scope
-// }
-
-// console.log(a); // Global scope
-// //console.log(b);
-
-
-// //Nested scope:
-// function one(){
-//     const username = "hitesh"
-
-//     function two (){
-//         const website = "Youtube"
-//         console.log(username);
-//     }
-//     //console.log(website);
-
-//     two() 
-// }
-// one()
-
-// if (true){
-//     const username = "apurba"
-//     if (username === "apurba") {
-//         const website = " youtube"
-//         console.log(username + website);   
-//     }
-//     //console.log(website); // trying to access website outside of inner for loop
-    
-// }
-// //console.log(username); // trying to access website outside of outer for loop
-
-
-//+++++++++++++++++++++ Interesting Concept +++++++++++++++++++
-
-console.log(addone (5)); // this is correct
-function addone (num){
-    return num + 1
+if (true) {
+    let a = 10;
+    const b = 20;
+    console.log("1: " + (a)); // block scope
+    console.log("2: " + (b)); // block scope
 }
 
-addTwo (5); //Trying to access a function before its declearation: Not possible in this format
-const addTwo = function (num){ 
-    return num + 2
+console.log("3: " + (a)); // Global scope
+
+// Nested scope
+function one() {
+    const username = "hitesh";
+    function two() {
+        const website = "Youtube";
+        console.log("4: " + (username));
+        console.log("5: " + (website));
+    }
+    two();
+}
+one();
+
+if (true) {
+    const username = "apurba";
+    if (username === "apurba") {
+        const website = " youtube";
+        console.log("6: " + (username + website));
+    }
 }
 
+// +++++++++++++++++++++ Interesting Concept +++++++++++++++++++
 
+// Function Declaration (Hoisting works)
+console.log("7: " + (addone(5)));
+function addone(num) {
+    return num + 1;
+}
 
-
-
-
-
-
+// Function Expression (Call after declaration)
+const addTwo = function (num) {
+    return num + 2;
+};
+console.log("8: " + (addTwo(5)));
